@@ -252,6 +252,10 @@
         </div>
     </div>
 
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/213561727570" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <i class="fas fa-phone"></i>
+    </a>
 
     <!-- Back to Top Button -->
     <button id="backToTop" onclick="scrollToTop()">⬆️</button>
@@ -267,24 +271,24 @@
 
     <!-- User Details Form Modal -->
     <div id="order-form-modal" class="modal" style="display:none;" onclick="closeOrderFormModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation();" style="max-width: 450px; margin: auto; padding: 25px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
-            <span class="close" onclick="closeOrderFormModal(event)" style="cursor: pointer; font-size: 22px; color: #333;">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation();" style="max-width: 90%; margin: auto; padding: 20px; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <span class="close" onclick="closeOrderFormModal(event)" style="cursor: pointer; font-size: 22px; color: #333; position: absolute; top: 10px; right: 15px;">&times;</span>
             <h3 style="text-align: center; margin-bottom: 20px; font-family: Arial, sans-serif; color: #444;">أدخل تفاصيل الطلب</h3>
-            <form id="orderForm">
-                <div style="margin-bottom: 15px;">
-                    <label for="firstName" style="font-weight: bold; color: #555;">الاسم الأول</label>
+            <form id="orderForm" style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <label for="firstName" style="font-weight: bold; color: #555; display: block; margin-bottom: 5px;">الاسم الأول</label>
                     <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
                 </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="secondName" style="font-weight: bold; color: #555;">اللقب</label>
+                <div>
+                    <label for="secondName" style="font-weight: bold; color: #555; display: block; margin-bottom: 5px;">اللقب</label>
                     <input type="text" id="secondName" name="secondName" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
                 </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="phoneNumber" style="font-weight: bold; color: #555;">رقم الهاتف</label>
+                <div>
+                    <label for="phoneNumber" style="font-weight: bold; color: #555; display: block; margin-bottom: 5px;">رقم الهاتف</label>
                     <input type="tel" id="phoneNumber" name="phoneNumber" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
                 </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="wilaya" style="font-weight: bold; color: #555;">الولاية</label>
+                <div>
+                    <label for="wilaya" style="font-weight: bold; color: #555; display: block; margin-bottom: 5px;">الولاية</label>
                     <select id="wilaya" name="wilaya" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
                         <option value="" disabled selected>اختر الولاية</option>
                         <option value="ولاية أدرار">ولاية أدرار 01</option>
@@ -347,8 +351,8 @@
                         <option value="ولاية المنيعة">ولاية المنيعة 58</option>
                     </select>
                 </div>
-                <div style="margin-bottom: 15px;">
-                    <label for="quantity" style="font-weight: bold; color: #555;">الكمية</label>
+                <div>
+                    <label for="quantity" style="font-weight: bold; color: #555; display: block; margin-bottom: 5px;">الكمية</label>
                     <input type="number" id="quantity" name="quantity" min="1" value="1" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
                 </div>
                 <button type="submit" style="width: 100%; padding: 12px; background: #4CAF50; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;">إرسال</button>
