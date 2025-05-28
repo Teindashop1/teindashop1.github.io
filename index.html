@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rr_trienda - متجر القبعات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-logo">
+            <img src="images/logo.png" alt="Logo" style="width:60px;height:60px;">
+        </div>
+        <div class="header-center">
+            <h1>trienda Shop</h1>
+            <p>أفضل القبعات في الجزائر - The Best Hats</p>
+        </div>
+        <div class="header-actions">
+        </div>
+    </header>
+
+
+        <section class="products" id="products-list">
+            <div class="product-card" data-name="قبعة كلاسيكية" data-price="1500">
+                <img src="images/hat1.webp" alt="قبعة كلاسيكية" style="display:block;">
+                <h3>قبعة كلاسيكية</h3>
+                <div class="stars">★★★★★</div>
+                <p>1500 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة كلاسيكية', '1500 دج', 'images/hat1.webp');">أطلب الآن</a>
+            </div>
+            <div class="product-card" data-name="قبعة رياضية" data-price="1800">
+                <img src="images/hat2.webp" alt="قبعة رياضية" style="display:block;">
+                <h3>قبعة رياضية</h3>
+                <div class="stars">★★★★★</div>
+                <p>1800 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة رياضية', '1800 دج', 'images/hat2.webp');">أطلب الآن</a>
+            </div>
+            <div class="product-card" data-name="قبعة رياضية" data-price="1800">
+                <img src="images/hat3.webp" alt="قبعة رياضية" style="display:block;">
+                <h3>قبعة رياضية</h3>
+                <div class="stars">★★★★★</div>
+                <p>1800 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة رياضية', '1800 دج', 'images/hat3.webp');"> أطلب الآن </a>
+            </div>
+            <!-- 24 more products below, same image and structure, update as needed -->
+            <div class="product-card" data-name="قبعة جديدة 4" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 4" style="display:block;">
+                <h3>قبعة جديدة 4</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 4', '2000 دج', 'images/hat1.webp');">  أطلب الآن</a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 5" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 5" style="display:block;">
+                <h3>قبعة جديدة 5</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 5', '2000 دج', 'images/hat1.webp');">  أطلب الآن</a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 6" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 6" style="display:block;">
+                <h3>قبعة جديدة 6</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 6', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 7" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 7" style="display:block;">
+                <h3>قبعة جديدة 7</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 7', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 8" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 8" style="display:block;">
+                <h3>قبعة جديدة 8</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 8', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 9" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 9" style="display:block;">
+                <h3>قبعة جديدة 9</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 9', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 10" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 10" style="display:block;">
+                <h3>قبعة جديدة 10</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 10', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 11" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 11" style="display:block;">
+                <h3>قبعة جديدة 11</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 11', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 12" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 12" style="display:block;">
+                <h3>قبعة جديدة 12</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 12', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 13" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 13" style="display:block;">
+                <h3>قبعة جديدة 13</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 13', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 14" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 14" style="display:block;">
+                <h3>قبعة جديدة 14</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 14', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 15" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 15" style="display:block;">
+                <h3>قبعة جديدة 15</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 15', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 16" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 16" style="display:block;">
+                <h3>قبعة جديدة 16</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 16', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 17" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 17" style="display:block;">
+                <h3>قبعة جديدة 17</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 17', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 18" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 18" style="display:block;">
+                <h3>قبعة جديدة 18</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 18', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 19" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 19" style="display:block;">
+                <h3>قبعة جديدة 19</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 19', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 20" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 20" style="display:block;">
+                <h3>قبعة جديدة 20</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 20', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 21" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 21" style="display:block;">
+                <h3>قبعة جديدة 21</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 21', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 22" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 22" style="display:block;">
+                <h3>قبعة جديدة 22</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 22', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 23" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 23" style="display:block;">
+                <h3>قبعة جديدة 23</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 23', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 24" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 24" style="display:block;">
+                <h3>قبعة جديدة 24</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 24', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 25" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 25" style="display:block;">
+                <h3>قبعة جديدة 25</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 25', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+            <div class="product-card" data-name="قبعة جديدة 26" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 26" style="display:block;">
+                <h3>قبعة جديدة 26</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 26', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+                        <div class="product-card" data-name="قبعة جديدة 26" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 26" style="display:block;">
+                <h3>قبعة جديدة 26</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 26', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+                        <div class="product-card" data-name="قبعة جديدة 26" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 26" style="display:block;">
+                <h3>قبعة جديدة 26</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 26', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+                        <div class="product-card" data-name="قبعة جديدة 26" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 26" style="display:block;">
+                <h3>قبعة جديدة 26</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 26', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+                        <div class="product-card" data-name="قبعة جديدة 26" data-price="2000">
+                <img src="images/hat1.webp" alt="قبعة جديدة 26" style="display:block;">
+                <h3>قبعة جديدة 26</h3>
+                <div class="stars">★★★★★</div>
+                <p>2000 دج</p>
+                <a href="#" class="whatsapp-btn" onclick="event.stopPropagation(); showOrderFormModal(event, 'قبعة جديدة 26', '2000 دج', 'images/hat1.webp');"> أطلب الآن </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>rr_trienda &copy; 2025 - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <!-- Product Preview Modal -->
+    <div id="preview-modal" class="modal" onclick="closePreviewModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <span class="close" onclick="closePreviewModal(event)">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <div class="stars" id="modal-stars">★★★★★</div>
+            <p id="modal-price"></p>
+            <a id="modal-whatsapp" href="#" class="whatsapp-btn" target="_blank">اطلب عبر واتساب</a>
+        </div>
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/213561727570" class="whatsapp-float" target="_blank" title="تواصل معنا عبر واتساب">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">⬆️</button>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="modal" style="display:none;" onclick="closeSearchModal(event)">
+        <div class="modal-content search-modal-content" onclick="event.stopPropagation();">
+            <span class="close search-close-rtl" onclick="closeSearchModal(event)">&times;</span>
+            <input id="searchModalInput" type="text" placeholder="ابحث عن قبعة أو السعر..." oninput="liveSearchProducts()" autofocus style="width:90%;padding:10px 12px;font-size:16px;border-radius:8px;border:1.5px solid #8f94fb;margin-bottom:12px;direction:rtl;">
+            <div id="searchNoResults" style="display:none;color:#e74c3c;font-weight:bold;margin-top:10px;">لا توجد نتائج</div>
+        </div>
+    </div>
+
+    <!-- User Details Form Modal -->
+    <div id="order-form-modal" class="modal" style="display:none;" onclick="closeOrderFormModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation();" style="max-width: 450px; margin: auto; padding: 25px; border-radius: 12px; background: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);">
+            <span class="close" onclick="closeOrderFormModal(event)" style="cursor: pointer; font-size: 22px; color: #333;">&times;</span>
+            <h3 style="text-align: center; margin-bottom: 20px; font-family: Arial, sans-serif; color: #444;">أدخل تفاصيل الطلب</h3>
+            <form id="orderForm">
+                <div style="margin-bottom: 15px;">
+                    <label for="firstName" style="font-weight: bold; color: #555;">الاسم الأول</label>
+                    <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="secondName" style="font-weight: bold; color: #555;">اللقب</label>
+                    <input type="text" id="secondName" name="secondName" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="phoneNumber" style="font-weight: bold; color: #555;">رقم الهاتف</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="wilaya" style="font-weight: bold; color: #555;">الولاية</label>
+                    <select id="wilaya" name="wilaya" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                        <option value="" disabled selected>اختر الولاية</option>
+                        <option value="ولاية أدرار">ولاية أدرار 01</option>
+                        <option value="ولاية الشلف">ولاية الشلف 02</option>
+                        <option value="ولاية الأغواط">ولاية الأغواط 03</option>
+                        <option value="ولاية أم البواقي">ولاية أم البواقي 04</option>
+                        <option value="ولاية باتنة">ولاية باتنة 05</option>
+                        <option value="ولاية بجاية">ولاية بجاية 06</option>
+                        <option value="ولاية بسكرة">ولاية بسكرة 07</option>
+                        <option value="ولاية بشار">ولاية بشار 08</option>
+                        <option value="ولاية البليدة">ولاية البليدة 09</option>
+                        <option value="ولاية البويرة">ولاية البويرة 10</option>
+                        <option value="ولاية تمنراست">ولاية تمنراست 11</option>
+                        <option value="ولاية تبسة">ولاية تبسة 12</option>
+                        <option value="ولاية تلمسان">ولاية تلمسان 13</option>
+                        <option value="ولاية تيارت">ولاية تيارت 14</option>
+                        <option value="ولاية تيزي وزو">ولاية تيزي وزو 15</option>
+                        <option value="ولاية الجزائر">ولاية الجزائر 16</option>
+                        <option value="ولاية الجلفة">ولاية الجلفة 17</option>
+                        <option value="ولاية جيجل">ولاية جيجل 18</option>
+                        <option value="ولاية سطيف">ولاية سطيف 19</option>
+                        <option value="ولاية السعيدة">ولاية السعيدة 20</option>
+                        <option value="ولاية سكيكدة">ولاية سكيكدة 21</option>
+                        <option value="ولاية سيدي بلعباس">ولاية سيدي بلعباس 22</option>
+                        <option value="ولاية عنابة">ولاية عنابة 23</option>
+                        <option value="ولاية قالمة">ولاية قالمة 24</option>
+                        <option value="ولاية قسنطينة">ولاية قسنطينة 25</option>
+                        <option value="ولاية المدية">ولاية المدية 26</option>
+                        <option value="ولاية مستغانم">ولاية مستغانم 27</option>
+                        <option value="ولاية المسيلة">ولاية المسيلة 28</option>
+                        <option value="ولاية معسكر">ولاية معسكر 29</option>
+                        <option value="ولاية ورقلة">ولاية ورقلة 30</option>
+                        <option value="ولاية وهران">ولاية وهران 31</option>
+                        <option value="ولاية البيض">ولاية البيض 32</option>
+                        <option value="ولاية إليزي">ولاية إليزي 33</option>
+                        <option value="ولاية برج بوعريريج">ولاية برج بوعريريج 34</option>
+                        <option value="ولاية بومرداس">ولاية بومرداس 35</option>
+                        <option value="ولاية الطارف">ولاية الطارف 36</option>
+                        <option value="ولاية تندوف">ولاية تندوف 37</option>
+                        <option value="ولاية تسيمسيلت">ولاية تسيمسيلت 38</option>
+                        <option value="ولاية الوادي">ولاية الوادي 39</option>
+                        <option value="ولاية خنشلة">ولاية خنشلة 40</option>
+                        <option value="ولاية سوق اهراس">ولاية سوق اهراس 41</option>
+                        <option value="ولاية تيبازة">ولاية تيبازة 42</option>
+                        <option value="ولاية ميلة">ولاية ميلة 43</option>
+                        <option value="ولاية عين الدفلى">ولاية عين الدفلى 44</option>
+                        <option value="ولاية النعامة">ولاية النعامة 45</option>
+                        <option value="ولاية عين تموشنت">ولاية عين تموشنت 46</option>
+                        <option value="ولاية غرادية">ولاية غرادية 47</option>
+                        <option value="ولاية غليزان">ولاية غليزان 48</option>
+                        <option value="ولاية تيميمون">ولاية تيميمون 49</option>
+                        <option value="ولاية برج باجي مختار">ولاية برج باجي مختار 50</option>
+                        <option value="ولاية أولاد جلال">ولاية أولاد جلال 51</option>
+                        <option value="ولاية بني عباس">ولاية بني عباس 52</option>
+                        <option value="ولاية عين صالح">ولاية عين صالح 53</option>
+                        <option value="ولاية عين قزام">ولاية عين قزام 54</option>
+                        <option value="ولاية توقرت">ولاية توقرت 55</option>
+                        <option value="ولاية جانت">ولاية جانت 56</option>
+                        <option value="ولاية المغير">ولاية المغير 57</option>
+                        <option value="ولاية المنيعة">ولاية المنيعة 58</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="quantity" style="font-weight: bold; color: #555;">الكمية</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 14px;">
+                </div>
+                <button type="submit" style="width: 100%; padding: 12px; background: #4CAF50; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; font-weight: bold;">إرسال</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Include the new JavaScript file -->
+    <script src="orderForm.js"></script>
+</body>
+</html>
