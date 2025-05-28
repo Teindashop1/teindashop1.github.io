@@ -154,26 +154,6 @@ body {
             margin: 12px 0 10px 0;
             letter-spacing: 1px;
         }
-        .whatsapp-btn {
-            display: inline-block;
-            background: linear-gradient(90deg, #2593d3 0%, #14128c 100%);
-            color: #fff;
-            padding: 10px 22px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 16px;
-            margin-top: 12px;
-            font-weight: bold;
-            box-shadow: 0 2px 8px #00000033;
-            border: none;
-            transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-        }
-        .whatsapp-btn:hover {
-            background: linear-gradient(90deg, #000000 0%, #303030 100%);
-            color: #fff;
-            box-shadow: 0 4px 16px #04374b33;
-            transform: scale(1.07);
-        }
         footer {
             text-align: center;
             padding: 18px;
